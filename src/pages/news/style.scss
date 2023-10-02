@@ -1,0 +1,33 @@
+.news {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+
+  &__card {
+    min-height: 260px;
+    max-width: 260px;
+    border: 1px solid #2239dd;
+    border-radius: 8px;
+    padding: 32px;
+
+    &.wide {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    &-date {
+      font-size: 14px;
+      line-height: 16px;
+      opacity: .5;
+    }
+
+    &-image {
+      object-fit: cover
+    }
+  }
+}

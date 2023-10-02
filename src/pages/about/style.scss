@@ -1,0 +1,45 @@
+.about {
+  width: 100%;
+  padding: 0 200px;
+
+  &__info {
+
+    &-row {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 20px;
+
+    .slick-dots li {
+      margin: 0 17px;
+    }
+
+    .slick-dots li.slick-active button:before {
+      //background-color: #00b371;
+      background-color: #2239dd;
+    }
+
+    .slick-dots li button:before {
+      //background-color: #00b371;
+      content: "";
+      background-color: #2239dd;
+      height: 4px;
+      width: 48px;
+      border-radius: 2px;
+    }
+
+    &-item {
+      height: 500px;
+      border: 2px solid #2239dd;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+}

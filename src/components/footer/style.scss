@@ -1,0 +1,51 @@
+.footer {
+
+  &__inner {
+    padding: 84px 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__sitemap {
+      display: flex;
+
+      &-column {
+
+        &__title {
+          color: #9fa7be;
+          font-size: 18px;
+          margin-bottom: 24px;
+        }
+
+        li {
+          font-size: 17px;
+          margin-top: 12px;
+
+          a {
+            transition: all .3s;
+
+            &:hover {
+              color: #00b38b;
+            }
+          }
+        }
+      }
+
+      ul + ul {
+        margin-left: 100px;
+      }
+    }
+
+    .footer__phone {
+      font-size: 16px;
+
+      &-link {
+        transition: color .3s ease-in-out;
+
+        &:hover {
+          color: #00b38b;
+        }
+      }
+    }
+  }
+}

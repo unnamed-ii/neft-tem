@@ -1,0 +1,40 @@
+.input {
+  border-radius: 4px;
+  margin-bottom: 25px;
+  width: 100%;
+  outline: none;
+  height: 68px;
+  padding: 16px;
+  border: 1px solid #c9d8e8;
+  transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  caret-color: rgb(0, 179, 113);
+
+  &:hover {
+    border-color: #9fa7be;
+    box-shadow: inset 0 0 0 1px #9fa7be;
+  }
+
+  &:focus {
+    border-color: #00b371;
+    box-shadow: inset 0 0 0 1px #00b371;
+  }
+
+  &.search-input {
+    height: 52px;
+    margin-right: 12px;
+    max-width: 760px;
+  }
+
+  &.feedback-form__input {
+    height: 52px;
+    width: 48.5%;
+
+    &::placeholder {
+      color: #cad8e8;
+    }
+  }
+
+  &.calculator-input {
+    margin-bottom: 0;
+  }
+}

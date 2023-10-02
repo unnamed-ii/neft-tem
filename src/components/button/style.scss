@@ -1,0 +1,75 @@
+.button {
+  border: none;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out, background .3s ease-in-out;
+
+  &.subscription__form__button,
+  &.search-button,
+  &.feedback-form__button {
+    background-color: #00b371;
+    color: #fff;
+    padding: 11px 32px 9px;
+    border-radius: 4px;
+    font-size: 20px;
+    height: 52px;
+
+    &:hover {
+      background-color: #60bf91;
+    }
+  }
+
+  &.home__calculator-footer__button {
+    padding: 11px 32px 9px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover {
+      background-color: #ced8e8;
+    }
+  }
+
+  &.home__calculator-price__discounts {
+    background: #213141;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 11px 72px 9px;
+
+    &:hover {
+      background-color: #505a66;
+    }
+  }
+
+  &.products__inner-filters__button {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    margin-left: -24px;
+    border-radius: 0 0 8px 8px;
+    background: #8ea2bb;
+    color: #fff;
+    padding: 11px 32px 9px;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover {
+      background: #a7b4c6;
+    }
+  }
+
+  &.main-slider__item-button {
+    background: #00b371;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 17px 32px 15px;
+
+
+    &:hover {
+      background: #60bf91;
+    }
+  }
+}
