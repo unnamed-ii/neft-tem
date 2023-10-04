@@ -3,13 +3,13 @@ todo:
 Layout:
 - adaptive:
 header +
-footer
-about page
-faq page
-feedback page
-home page
-news page
-not-found page
+footer +
+not-found page +  
+faq page +
+about page +
+feedback page + (left: set footer to the bottom of the page)
+home page + (left: calculator section: select)
+news page +
 products page
 separate-news page
 

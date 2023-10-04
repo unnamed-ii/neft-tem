@@ -24,7 +24,8 @@
             margin-bottom: 16px;
             font-size: 14px;
             line-height: 16px;
-            font-weight: 500;
+            font-weight: 600;
+            color: #202430;
           }
 
           #calculator-form__radio-btn {
@@ -97,6 +98,7 @@
 
     &-list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       gap: 24px;
       margin-bottom: 26px;
@@ -109,6 +111,7 @@
 
   &__number {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 24px 0 16px;
     font-size: 18px;
@@ -200,6 +203,7 @@
     height: 164px;
     position: relative;
     transition: transform .3s ease-in-out;
+    margin-right: 24px;
 
     &:hover {
       background: hsla(0, 0%, 100%, .2);
@@ -276,32 +280,113 @@
 
   .slick-dots li.slick-active button:before {
     //background-color: #00b371;
-    background-color: red;
+    background-color: #2239dd;
   }
 
   .slick-dots li button:before {
     //background-color: #00b371;
     content: "";
-    background-color: red;
+    background-color: #2239dd;
     height: 4px;
     width: 48px;
     border-radius: 2px;
   }
 
   &__item {
-    border: 2px solid red;
+    //border: 2px solid #00b371;
+    border: 2px solid #2239dd;
     height: 500px;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    padding: 50px;
 
     .main-slider__item-description {
       margin: 0 0 20px;
       font-size: 16px;
       line-height: 24px;
       color: #778da9;
+    }
+  }
+}
+
+@media (max-width: 1265px) {
+  .home {
+    &__news {
+      &-list {
+        display: block;
+
+        .news__card {
+          margin-bottom: 24px;
+          max-width: 1080px;
+
+          &.wide {
+            margin-bottom: 24px;
+            max-width: 1080px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .home {
+    &__calculator {
+      &-inner {
+        display: block;
+
+        &__form {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+
+        &__price {
+          width: 100%;
+        }
+      }
+
+      &-footer {
+        padding: 30px 40px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    &__calculator {
+      &-inner {
+        padding: 50px 20px 48px;
+      }
+    }
+  }
+
+  .home_main-slider {
+    &__item {
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .home {
+    &__products-slider {
+      .products-slider__card {
+        max-width: unset;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .home_main-slider {
+    &__item {
+      height: 400px;
     }
   }
 }

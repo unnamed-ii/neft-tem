@@ -8,6 +8,7 @@
 
     .header__menu {
       display: flex;
+      align-items: center;
 
       &-logo {
         margin-right: 40px;
@@ -203,6 +204,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header__phone-menu__switch {
+    &.mobile-open {
+      right: 20px;
     }
   }
 }

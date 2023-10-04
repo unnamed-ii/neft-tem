@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.scss";
 import Button from "../button";
+import Input from "../input";
 
 const Subscription = () => {
     return (
@@ -9,18 +10,17 @@ const Subscription = () => {
                 <h2 className="subscription__title">
                     Будьте в курсе всех специальных предложений
                 </h2>
-                <div className="subscription-form">
+                <div className="subscription__form">
                     <form>
-                        <input type="email"
-                               placeholder="Email"
-                               className="subscription-form__input"
+                        <Input
+                            type={"email"}
+                            placeholder={"Email"}
+                            className={"subscription__form-input"}
                         />
                         <Button
-                            className={"subscription__form__button"}
+                            className={"subscription__form-button"}
                             text={"Подписаться"}
-                        >
-                            Подписаться
-                        </Button>
+                        />
                     </form>
                 </div>
             </div>

@@ -80,4 +80,40 @@
     margin-bottom: 40px;
     color: #213141;
   }
+
+  &.not-found {
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: #213141;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    &.block-title {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    &.main-slider__item-title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &.feedback-form__title {
+      font-size: 32px;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .title {
+    &.feedback-form__title {
+      font-size: 28px;
+    }
+  }
 }

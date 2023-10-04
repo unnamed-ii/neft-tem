@@ -32,9 +32,7 @@ const Feedback = () => {
                             className={"feedback-info__row"}
                         />
                         423450, Российская Федерация,
-                        <br/>
                         Республика Татарстан,
-                        <br/>
                         г. Альметьевск, ул. Ленина, 75.
                     </div>
                     <div className="feedback__contacts-row">

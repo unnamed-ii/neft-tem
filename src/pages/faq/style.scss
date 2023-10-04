@@ -38,11 +38,11 @@
   }
 
   &:hover {
-    background-color: rgba(201,216,232,.2);
+    background-color: rgba(201, 216, 232, .2);
   }
 
   &.active {
-    background-color: rgba(201,216,232,.2);
+    background-color: rgba(201, 216, 232, .2);
 
     .qa__card-question {
       .icon {
@@ -53,6 +53,67 @@
     .qa__card-answer {
       max-height: 84px;
       padding-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .faq {
+    &__list {
+      padding: 0 88px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .faq {
+    &__list {
+      padding: 0;
+
+      .qa__card {
+        &-question {
+          position: relative;
+
+          .icon {
+            position: absolute;
+            right: 15px;
+          }
+        }
+
+        &.active {
+          .qa__card-answer {
+            max-height: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .faq {
+    &__list {
+      .qa__card {
+        &.active {
+          .qa__card-answer {
+            max-height: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .faq {
+    &__list {
+      .qa__card {
+        &.active {
+          .qa__card-answer {
+            max-height: 300px;
+          }
+        }
+      }
     }
   }
 }

@@ -14,7 +14,7 @@ const News = () => {
                 <div className="news__list">
                     {NewsData.map(i => (
                         <NewsCard
-                            type={i.type}
+                            // type={i.type}
                             createdAt={i.createdAt}
                             title={i.title}
                         />

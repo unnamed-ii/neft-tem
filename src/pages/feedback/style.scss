@@ -4,9 +4,9 @@
   display: flex;
   flex-wrap: nowrap;
   padding: 53px 20px 50px;
-  justify-content: space-between;
 
   &__contacts {
+    padding-right: 120px;
 
     &-row {
       color: #213141;
@@ -68,5 +68,33 @@
         box-shadow: inset 0 0 0 1px #00b371;
       }
     }
+  }
+}
+
+@media (max-width: 1280px) {
+  .feedback__contacts {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .feedback {
+    display: block;
+    width: 100%;
+    padding: 53px 0 50px;
+
+    &__contacts {
+      margin-bottom: 60px;
+    }
+
+    &__form {
+      max-width: unset;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .feedback__form-inputs {
+    display: block;
   }
 }

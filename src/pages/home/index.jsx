@@ -21,8 +21,8 @@ const Home = () => {
     return (
         <Container>
             <div className="home">
-                <MainSlider />
-                <ProductsSlider />
+                <MainSlider/>
+                <ProductsSlider/>
                 <section className="home__calculator">
                     <Title
                         title={"Рассчитайте стоимость топлива"}
@@ -56,7 +56,7 @@ const Home = () => {
                             <div className="calculator__select-headline">
                                 ТОПЛИВО
                             </div>
-                            <CustomDropdown />
+                            <CustomDropdown/>
                             <div className="calculator__input-headline">
                                 ОБЪЁМ
                             </div>
@@ -110,8 +110,8 @@ const Home = () => {
                             title={"Внимание. Информация об изменениях в положении о скидках"}
                         />
                     </div>
-                    <Subscription/>
                 </section>
+                <Subscription/>
             </div>
         </Container>
     );

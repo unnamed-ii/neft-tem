@@ -16,16 +16,16 @@ const AppRoutes = () => {
         {
             path: "/",
             element: <Layout/>,
-            // children: [
-            //     {index: true, element: <Home/>},
-            //     {path: "about", element: <About/>},
-            //     {path: "cooperation", element: <Cooperation/>},
-            //     {path: "faq", element: <FAQ/>},
-            //     {path: "feedback", element: <Feedback/>},
-            //     {path: "news", element: <News/>},
-            //     {path: "products", element: <Products/>},
-            //     {path: "news/:id", element: <SeparateNews/>},
-            // ]
+            children: [
+                {index: true, element: <Home/>},
+                {path: "about", element: <About/>},
+                {path: "cooperation", element: <Cooperation/>},
+                {path: "faq", element: <FAQ/>},
+                {path: "feedback", element: <Feedback/>},
+                {path: "news", element: <News/>},
+                {path: "products", element: <Products/>},
+                {path: "news/:id", element: <SeparateNews/>},
+            ]
         },
         {path: "*", element: <NotFound/>},
     ]);

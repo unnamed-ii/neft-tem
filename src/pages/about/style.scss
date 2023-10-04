@@ -43,3 +43,37 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .about {
+    padding: 0 180px;
+
+    &__slider-item {
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .about {
+    padding: 0 73px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__slider-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .about__slider-item {
+    height: 270px;
+  }
+}

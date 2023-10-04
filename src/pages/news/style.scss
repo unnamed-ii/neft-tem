@@ -14,9 +14,10 @@
     border: 1px solid #2239dd;
     border-radius: 8px;
     padding: 32px;
+    width: 100%;
 
     &.wide {
-      max-width: 600px;
+      max-width: 590px;
       width: 100%;
     }
 
@@ -28,6 +29,15 @@
 
     &-image {
       object-fit: cover
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .news {
+    &__card {
+      max-width: unset;
+      width: 100%;
     }
   }
 }

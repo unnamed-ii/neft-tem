@@ -64,7 +64,27 @@ const ProductsSlider = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     };
 
     return (

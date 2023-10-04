@@ -1,10 +1,10 @@
 .footer {
-
   &__inner {
-    padding: 84px 0 20px;
+    padding: 64px 0 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .footer__sitemap {
       display: flex;
@@ -44,6 +44,63 @@
 
         &:hover {
           color: #00b38b;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer__inner {
+    display: block;
+
+    .footer__logo {
+      width: 100%;
+      order: 3;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .footer__sitemap {
+      margin-bottom: 30px;
+      justify-content: space-between;
+
+      ul + ul {
+        margin: 0;
+      }
+    }
+
+    .footer__phone {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    &__inner {
+      .footer__sitemap {
+        text-align: center;
+        display: block;
+
+        ul + ul {
+          margin-top: 30px;
+        }
+
+        &-column {
+
+          li {
+            margin: 0;
+          }
+
+          li + li {
+            margin-top: 12px;
+          }
+
+          &__title {
+            margin: 0;
+          }
         }
       }
     }
