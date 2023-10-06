@@ -73,17 +73,17 @@ const Products = () => {
                                 types={"3"}
                             />
                         </div>
-                        <div className="products__inner-main__pagination">
-                            <button className="pagination__prev">
-                                prev
-                            </button>
-                            <div className="pagination__pages">
+                        {/*<div className="products__inner-main__pagination">*/}
+                        {/*    <button className="pagination__prev">*/}
+                        {/*        prev*/}
+                        {/*    </button>*/}
+                        {/*    <div className="pagination__pages">*/}
 
-                            </div>
-                            <button className="pagination__next">
-                                next
-                            </button>
-                        </div>
+                        {/*    </div>*/}
+                        {/*    <button className="pagination__next">*/}
+                        {/*        next*/}
+                        {/*    </button>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="products__inner-filters">
                         <form className="products__inner-filters__group">

@@ -16,6 +16,7 @@ const FAQ = () => {
                 <div className="faq__list">
                     {QAData.map(i => (
                         <QACard
+                            key={i.id}
                             question={i.question}
                             answer={i.answer}
                         />

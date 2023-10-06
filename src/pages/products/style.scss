@@ -104,3 +104,42 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .products {
+    &__inner {
+      &-main {
+        &__list {
+          .main__list-product {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-main {
+        order: 2;
+
+        &__list {
+          .main__list-product {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+      }
+
+      &-filters {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+    }
+  }
+}
