@@ -9,11 +9,10 @@ Functionality:
 - loading products ("products" page)
 
 Layout:
+separate-product page
 
 - То, что ниже пока необязательно:
-- create some modal so user will understand that he followed at "subscription" block
     - adaptive:
-        separate-news page
         separate-product page
         home page. calculator section: select
 

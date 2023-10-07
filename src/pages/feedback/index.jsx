@@ -4,6 +4,7 @@ import Container from "../../components/container";
 import Title from "../../components/title";
 import Button from "../../components/button";
 import Input from "../../components/input";
+import Modal from "../../components/modal";
 
 const Feedback = () => {
     const [formData, setFormData] = useState({
@@ -11,8 +12,16 @@ const Feedback = () => {
         phone: "",
         text: ""
     });
+    const [isModalOpened, setIsModalOpened] = useState(false);
+    const [modalData, setModalData] = useState({
+        title: "",
+        description: "",
+        isError: false
+    });
+    const toggleModal = () => setIsModalOpened(!isModalOpened);
+    console.log(isModalOpened)
     const onFieldChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
         setFormData({
             ...formData,
             [name]: value,
@@ -20,7 +29,23 @@ const Feedback = () => {
     }
     const onFormSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        // позже здесь будет добавлена оптравка почт пользователей в базу данных
+        // try catch подготовлен заранее для асинхронных запросов
+        try {
+            setModalData({
+                title: "Сообщение успешно отправлено",
+                description: "Вы свяжемся с вами с ближайшее время",
+                isError: false
+            });
+        } catch (e) {
+            setModalData({
+                title: "Произошла ошибка",
+                description: "Произошла ошибка при отправке сообщения, пожалуйста попробуйте ещё раз позже",
+                isError: true
+            });
+        }
+
+        setIsModalOpened(true);
     }
     return (
         <Container>
@@ -87,6 +112,13 @@ const Feedback = () => {
                         className={"feedback-form__button"}
                     />
                 </form>
+                <Modal
+                    title={modalData.title}
+                    description={modalData.description}
+                    isModalOpened={isModalOpened}
+                    toggleModal={toggleModal}
+                    isError={modalData.isError}
+                />
             </div>
         </Container>
     );

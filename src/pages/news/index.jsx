@@ -17,6 +17,7 @@ const News = () => {
                             key={i.id}
                             createdAt={i.createdAt}
                             title={i.title}
+                            id={i.id}
                         />
                     ))}
                 </div>

@@ -14,7 +14,7 @@
       padding: 11px 32px 9px 40px;
       background: #e7effd;
       color: #213141;
-      transition: opacity .3s ease-in-out,background .3s ease-in-out;
+      transition: opacity .3s ease-in-out, background .3s ease-in-out;
       border-radius: 4px;
 
       &:hover {
@@ -52,6 +52,34 @@
 
       p:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .single-news {
+    &__content {
+      padding: 0 88px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .single-news {
+    &__content {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .single-news {
+    &__link {
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
       }
     }
   }

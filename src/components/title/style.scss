@@ -19,7 +19,8 @@
   }
 
   &.news__card-title {
-    color: #fff;
+    //color: #fff;
+    color: #21316a;
     font-size: 22px;
     line-height: 32px;
     display: block;
@@ -88,6 +89,19 @@
     margin-bottom: 24px;
     color: #213141;
   }
+
+  &.modal__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+    color: #00a85d;
+    padding-bottom: 20px;
+
+    &.error {
+      color: #cc0000;
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -106,6 +120,18 @@
       font-size: 32px;
       line-height: 1.5;
       margin-bottom: 8px;
+    }
+
+    &.single-news__content-title {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .title {
+    &.modal__title {
+      font-size: 23px;
     }
   }
 }

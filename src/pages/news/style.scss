@@ -12,9 +12,15 @@
     min-height: 260px;
     max-width: 260px;
     border: 1px solid #2239dd;
+    //border: 1px solid #00b371;
     border-radius: 8px;
     padding: 32px;
     width: 100%;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px) perspective(1000px) rotateX(-12deg);
+    }
 
     &.wide {
       max-width: 590px;

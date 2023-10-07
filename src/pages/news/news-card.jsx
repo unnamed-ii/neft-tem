@@ -1,19 +1,20 @@
 import React from "react";
 import Title from "../../components/title";
+import {Link} from "react-router-dom";
 
-const NewsCard = ({createdAt, title, type}) => {
+const NewsCard = ({createdAt, title, type, id}) => {
     return (
         <div className={"news__card " + (type || "")}>
-            <time className="news__card-date">
-                {createdAt}
-            </time>
-            <a href="#" className="news__card-title">
+            <Link to={`/news/${id}`}>
+                <time className="news__card-date">
+                    {createdAt}
+                </time>
                 <Title
                     className={"news__card-title"}
                     title={title}
                 />
-            </a>
-            <img src="#" alt="Новость" className="news__card-image"/>
+                <img src="#" alt="Новость" className="news__card-image"/>
+            </Link>
         </div>
     )
 }
