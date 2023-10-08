@@ -26,7 +26,7 @@
 
   &.feedback-form__input {
     height: 52px;
-    width: 48.5%;
+    width: 100%;
 
     &::placeholder {
       color: #cad8e8;
@@ -84,8 +84,7 @@
     }
 
     &.feedback-form__input {
-      width: 100%;
-      margin-bottom: 12px;
+      margin-bottom: 24px;
     }
   }
 }

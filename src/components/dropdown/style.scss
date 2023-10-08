@@ -86,3 +86,9 @@
 .dropdown * {
   z-index: 10;
 }
+
+@media (max-width: 355px) {
+  .dropdown__input-selected {
+    font-size: 11px;
+  }
+}
