@@ -94,7 +94,7 @@ export const ProductsData = [
     },
 ]
 
-export const packagedProducts = [
+export const selfShippingProducts = [
     {
         label: "Автомобильный бензин АИ-92-К5 экологического класса К5 марки TANECO-92 'EURO-6' по СТО 78689379-50-2020",
         value: "option1",
@@ -112,7 +112,7 @@ export const packagedProducts = [
     },
 ]
 
-export const draftProducts = [
+export const companyShippingProducts = [
     {
         label: "draft product 1",
         value: "option1",

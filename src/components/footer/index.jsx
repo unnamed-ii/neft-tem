@@ -29,15 +29,15 @@ const Footer = () => {
                             <li className="footer__sitemap-column__title">
                                 Информация
                             </li>
-                            <li className="footer__sitemap-column__item">
-                                <Link to="cooperation">Схема сотрудничества</Link>
-                            </li>
+                            {/*<li className="footer__sitemap-column__item">*/}
+                            {/*    <Link to="cooperation">Схема сотрудничества</Link>*/}
+                            {/*</li>*/}
                             <li className="footer__sitemap-column__item">
                                 <Link to="feedback">Обратная связь</Link>
                             </li>
-                            <li className="footer__sitemap-column__item">
-                                <Link to="faq">Вопросы и ответы</Link>
-                            </li>
+                            {/*<li className="footer__sitemap-column__item">*/}
+                            {/*    <Link to="faq">Вопросы и ответы</Link>*/}
+                            {/*</li>*/}
                         </ul>
                         <ul className="footer__sitemap-column">
                             <li className="footer__sitemap-column__title">
@@ -46,9 +46,9 @@ const Footer = () => {
                             <li className="footer__sitemap-column__item">
                                 <Link to="about">О компании</Link>
                             </li>
-                            <li className="footer__sitemap-column__item">
-                                <Link to="news">Новости</Link>
-                            </li>
+                            {/*<li className="footer__sitemap-column__item">*/}
+                            {/*    <Link to="news">Новости</Link>*/}
+                            {/*</li>*/}
                         </ul>
                     </nav>
                     <div className="footer__phone">

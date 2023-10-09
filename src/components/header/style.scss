@@ -55,7 +55,7 @@
       }
 
       &-button {
-        transition: opacity .3s ease-in-out,background .3s ease-in-out;
+        transition: opacity .3s ease-in-out, background .3s ease-in-out;
         display: none;
         background-color: #00b38b;
         width: 40px;
@@ -89,7 +89,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: opacity .3s ease-in-out,background .3s ease-in-out;
+  transition: opacity .3s ease-in-out, background .3s ease-in-out;
   margin-left: 20px;
   display: none;
   padding-left: 10px;
@@ -134,6 +134,7 @@
         &-link {
           display: none;
         }
+
         &-button {
           display: flex;
         }
@@ -147,7 +148,7 @@
     display: block;
 
     &.mobile-open {
-      z-index: 1;
+      z-index: 11;
       top: 40px;
       right: 40px;
       position: fixed;
@@ -179,23 +180,31 @@
 
           &.mobile-open {
             top: 0;
+            //bottom: 0;
             right: 0;
-            bottom: 0;
             left: 0;
             margin: 0;
-            z-index: 1;
+            z-index: 11;
             display: block;
             overflow: auto;
             position: fixed;
-            background: #fff;
-            padding: 44px 40px 20px;
+            padding: 90px 40px;
+            text-align: center;
+            background-color: #00a85d;
 
             li {
               display: block;
               font-size: 20px;
               line-height: 24px;
-              color: #526b86;
               margin: 0;
+
+              a {
+                color: #fff;
+
+                &:hover {
+                  color: #213141;
+                }
+              }
 
               & + li {
                 margin-top: 40px;

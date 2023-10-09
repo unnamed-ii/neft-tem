@@ -31,18 +31,13 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="news">
-                    Новости
+                  <NavLink to="feedback">
+                    Обратная связь
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="about">
                     О компании
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="cooperation">
-                    Схема работы
                   </NavLink>
                 </li>
               </ul>

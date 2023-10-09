@@ -11,10 +11,10 @@ import Button from "../../components/button";
 
 const Calculator = () => {
     const [productPrice, setProductPrice] = useState("0");
-    const [productFormat, setProductFormat] = useState("разлив");
+    const [shipmentFormat, setShipmentFormat] = useState("самовывоз");
     const [productVolume, setProductVolume] = useState("10");
     const handleProductVolumeChange = (volume) => setProductVolume(volume);
-    const handleProductFormatChange = (format) => setProductFormat(format);
+    const handleShipmentFormatChange = (format) => setShipmentFormat(format);
     const handleFormSubmit = (e) => e.preventDefault();
 
     return (
@@ -27,34 +27,34 @@ const Calculator = () => {
                 <form onSubmit={handleFormSubmit} className="home__calculator-inner__form">
                     <FormControl className="calculator-form__radio-group">
                         <FormLabel id="demo-radio-buttons-group-label">
-                            ФОРМАТ ПРОДУКЦИИ
+                            СПОСОБ ОТГРУЗКИ
                         </FormLabel>
                         <RadioGroup
                             aria-labelledby="demo-radio-buttons-group-label"
-                            defaultValue="разлив"
+                            defaultValue="самовывоз"
                             name="radio-buttons-group"
                         >
                             <FormControlLabel
-                                value="разлив"
+                                value="самовывоз"
                                 control={<BpRadio/>}
-                                label="На разлив"
+                                label="Самовывоз"
                                 id="calculator-form__radio-btn"
-                                onChange={(e) => handleProductFormatChange(e.target.value)}
+                                onChange={(e) => handleShipmentFormatChange(e.target.value)}
                             />
                             <FormControlLabel
-                                value="расфасовка"
+                                value="доставка"
                                 control={<BpRadio/>}
-                                label="Фасованная продукция"
+                                label="Доставка"
                                 id="calculator-form__radio-btn"
-                                onChange={(e) => handleProductFormatChange(e.target.value)}
+                                onChange={(e) => handleShipmentFormatChange(e.target.value)}
                             />
                         </RadioGroup>
                     </FormControl>
                     <div className="calculator__select-headline">
-                        ТОПЛИВО
+                        НЕФТЕПРОДУКТЫ
                     </div>
                     <CustomDropdown
-                        productFormat={productFormat}
+                        shipmentFormat={shipmentFormat}
                         setProductPrice={setProductPrice}
                         productVolume={productVolume}
                     />

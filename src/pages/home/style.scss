@@ -5,7 +5,7 @@
     max-width: 1016px;
     margin: 0 auto;
     border-radius: 8px;
-    padding: 95px 0 120px;
+    padding: 95px 0;
 
     &-inner {
       display: flex;
@@ -279,13 +279,13 @@
   }
 
   .slick-dots li.slick-active button:before {
-    //background-color: #00b371;
-    background-color: #2239dd;
+    background-color: #00b371;
+    //background-color: #2239dd;
   }
 
   .slick-dots li button:before {
-    //background-color: #00b371;
-    background-color: #2239dd;
+    background-color: #00b371;
+    //background-color: #2239dd;
     content: "";
     height: 4px;
     width: 48px;
@@ -293,8 +293,8 @@
   }
 
   &__item {
-    //border: 2px solid #00b371;
-    border: 2px solid #2239dd;
+    border: 2px solid #00b371;
+    //border: 2px solid #2239dd;
     height: 500px;
     border-radius: 10px;
     display: flex;

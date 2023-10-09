@@ -13,9 +13,9 @@ const Home = () => {
         <Container>
             <div className="home">
                 <MainSlider/>
-                <ProductsSlider/>
+                {/*<ProductsSlider/>*/}
                 <Calculator/>
-                <HomeNews/>
+                {/*<HomeNews/>*/}
                 <Subscription/>
             </div>
         </Container>

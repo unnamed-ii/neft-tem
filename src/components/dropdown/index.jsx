@@ -1,27 +1,27 @@
 import React, {useEffect, useState} from "react";
 import "./style.scss";
 import {ReactComponent as ArrowIcon} from "../../icons/arrow-down.svg";
-import {draftProducts, packagedProducts} from "../../pages/home/constants";
+import {companyShippingProducts, selfShippingProducts} from "../../pages/home/constants";
 
-const CustomDropdown = ({productFormat, setProductPrice, productVolume}) => {
+const CustomDropdown = ({shipmentFormat, setProductPrice, productVolume}) => {
     const [dropdownActive, setDropdownActive] = useState(false);
     const [selectedOption, setSelectedOption] = useState({label: false, price: "0"});
-    const [optionsList, setOptionsList] = useState(draftProducts);
+    const [optionsList, setOptionsList] = useState(companyShippingProducts);
     const handleToggleDropdown = () => setDropdownActive(!dropdownActive);
     const handleSelect = (option) => {
         setSelectedOption(option);
         setDropdownActive(!dropdownActive);
     }
     useEffect(() => {
-        if (productFormat === "расфасовка") {
-            setOptionsList(packagedProducts);
+        if (shipmentFormat === "доставка") {
+            setOptionsList(selfShippingProducts);
         } else {
-            setOptionsList(draftProducts);
+            setOptionsList(companyShippingProducts);
         }
         setProductPrice("0");
         setSelectedOption({label: false, price: "0"});
         setDropdownActive(false);
-    }, [productFormat]);
+    }, [shipmentFormat]);
 
     useEffect(() => {
         const updatedPrice = (selectedOption.price * productVolume).toString();
